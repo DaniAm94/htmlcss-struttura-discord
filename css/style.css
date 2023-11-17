@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+/* CSS properties */
+:root {
+    --sectheight: 641px;
+    --contheight:
+}
+
 /* Utils */
 .container {
     max-width: 1080px;
@@ -33,7 +39,6 @@ header {
     display: flex;
     align-items: center;
     border: 1px dashed black;
-    flex-basis: ;
 }
 
 .side-header {
@@ -56,7 +61,7 @@ header {
 /* Jumbotron */
 
 #jumbotron {
-    height: 600px;
+    height: 541px;
     background-color: blue;
     display: flex;
     justify-content: center;
@@ -67,4 +72,43 @@ header {
     background-color: palevioletred;
     height: 80%;
     flex-basis: 50%;
+}
+
+/* MAIN */
+.primary-section {
+    height: var(--sectheight);
+    display: flex;
+    align-items: center;
+}
+
+.primary-section:nth-of-type(odd) {
+    background-color: white;
+}
+
+.primary-section:nth-of-type(even) {
+    background-color: lightgrey;
+}
+
+.small-content {
+    background-color: pink;
+    flex-basis: calc(1080px * 0.4);
+}
+
+.large-content {
+    background-color: lightslategray;
+    flex-basis: calc(1080px * 0.6);
+}
+
+.primary-section>.container {
+    height: 80%;
+    display: flex;
+    width: 1080px;
+}
+
+.primary-section:last-of-type {
+    height: 1282px;
+}
+
+.primary-section:last-of-type>.container {
+    background-color: green;
 }
