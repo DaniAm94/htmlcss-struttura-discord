@@ -52,3 +52,19 @@ header {
 .header-item>* {
     margin: 20px;
 }
+
+/* Jumbotron */
+
+#jumbotron {
+    height: 600px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#jumbo-content {
+    background-color: palevioletred;
+    height: 80%;
+    flex-basis: 50%;
+}
