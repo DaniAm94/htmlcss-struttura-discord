@@ -7,7 +7,7 @@
 
 /* CSS properties */
 :root {
-    --sectheight: 641px;
+    --sectheight: 500px;
     --contheight:
 }
 
@@ -31,8 +31,6 @@ header {
     display: flex;
     background-color: orange;
     height: 60%;
-
-
 }
 
 .header-item {
@@ -61,7 +59,7 @@ header {
 /* Jumbotron */
 
 #jumbotron {
-    height: 541px;
+    height: 400px;
     background-color: blue;
     display: flex;
     justify-content: center;
@@ -106,9 +104,62 @@ header {
 }
 
 .primary-section:last-of-type {
-    height: 1282px;
+    height: 800px;
 }
 
 .primary-section:last-of-type>.container {
     background-color: green;
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
+    height: 600px;
+    display: flex;
+}
+
+.footer-container {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-footer {
+    margin-top: 20px;
+    width: 1080px;
+    height: 400px;
+    background-color: springgreen;
+    display: flex;
+}
+
+.top-left-footer {
+    width: calc(1080px / 3);
+    background-color: pink;
+}
+
+.top-right-footer {
+    background-color: turquoise;
+    width: calc(1080px / 3 * 2);
+    display: flex;
+}
+
+.col-footer {
+    flex-grow: 1;
+    border: 1px dashed white;
+}
+
+.bottom-footer {
+    height: 100px;
+    background-color: springgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-footer-item {
+    background-color: lightcoral;
+    padding: 10px 20px;
 }
