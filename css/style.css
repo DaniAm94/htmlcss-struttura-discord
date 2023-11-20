@@ -7,13 +7,12 @@
 
 /* CSS properties */
 :root {
-    --sectheight: 500px;
-    --contheight:
+    --dispsize: 1080px;
 }
 
 /* Utils */
 .container {
-    max-width: 1080px;
+    max-width: var(--dispsize);
     margin: 0 auto;
 }
 
@@ -40,11 +39,11 @@ header {
 }
 
 .side-header {
-    flex-basis: calc(1080px * 0.2);
+    flex-basis: calc(var(--dispsize) * 0.2);
 }
 
 .header-item:not(.side-header) {
-    flex-basis: calc(1080px * 0.6);
+    flex-basis: calc(var(--dispsize) * 0.6);
     justify-content: center;
 }
 
@@ -63,20 +62,20 @@ header {
     background-color: blue;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 40px 0;
 }
 
 #jumbo-content {
     background-color: palevioletred;
-    height: 80%;
+    height: 100%;
     flex-basis: 50%;
 }
 
 /* MAIN */
 .primary-section {
-    height: var(--sectheight);
+    height: 500px;
     display: flex;
-    align-items: center;
+    padding: 50px;
 }
 
 .primary-section:nth-of-type(odd) {
@@ -89,18 +88,18 @@ header {
 
 .small-content {
     background-color: pink;
-    flex-basis: calc(1080px * 0.4);
+    flex-basis: calc(var(--dispsize) * 0.4);
 }
 
 .large-content {
     background-color: lightslategray;
-    flex-basis: calc(1080px * 0.6);
+    flex-basis: calc(var(--dispsize) * 0.6);
 }
 
 .primary-section>.container {
-    height: 80%;
+    height: 100%;
     display: flex;
-    width: 1080px;
+    width: var(--dispsize);
 }
 
 .primary-section:last-of-type {
@@ -120,7 +119,7 @@ footer {
 }
 
 .footer-container {
-    max-width: 1080px;
+    max-width: var(--dispsize);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -129,20 +128,19 @@ footer {
 
 .top-footer {
     margin-top: 20px;
-    width: 1080px;
+    width: var(--dispsize);
     height: 400px;
-    background-color: springgreen;
     display: flex;
 }
 
 .top-left-footer {
-    width: calc(1080px / 3);
+    width: calc(var(--dispsize) / 3);
     background-color: pink;
 }
 
 .top-right-footer {
     background-color: turquoise;
-    width: calc(1080px / 3 * 2);
+    width: calc(var(--dispsize) / 3 * 2);
     display: flex;
 }
 
